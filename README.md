@@ -22,6 +22,7 @@ Illumio coding assessment
     mvn clean;        //  From the project root directory
     
     mvn package -Dtest=FirewallTest -DfilePath='absoulte-path-of-the-file'
+    
     For ex:
     mvn package -Dtest=FirewallTest -DfilePath=/home/hadoop/illumio/firewall-illumio/test.csv
 
@@ -43,9 +44,23 @@ Illumio coding assessment
     
 
 5) Further refinements and Optimizations.
-  - 
+  - If the number of rules in the file is very high, we can make use of concurrent processing of the rule list to speed 
+    up the process. 
+  - In Java, we can use Executor service to create a fixed number of threads according to the application requirements 
+    and then let all the threads check a part of the rule list to see if any rule matches the given input. 
+  - For concurrent read access by multiple threads, we can use 'CopyOnWriteArrayList' in Java. CopyOnWriteArrayList lets
+    multiple threads do a read access to the list at the same time without any locking since threads are not modifying  
+    the list. Then, when any of the threads finds a matching rule, all the threads stop processing the list and return 
+    true.
+  - There are overheads of creating and destroying of threads and also using CopyOnWriteArrayList here. Hence, this 
+    method should be used only when input size is very large and rule checking by single thread is not quick enough.
 
 6) Teams interested in.
+  - I am concentrating on Distributed Systems, Big Data and Cloud Computing in my masters. I have also done several 
+    projects and internships in the above domain which involved working with NoSQL databases, Hadoop ecosystem and Big 
+    Data software development. I have experience with tools and technologies such as Hadoop, Spark, Kafka, Cassandra and 
+    Elasticsearch. I have software development experience in Java domain. I also have some experience with Python and 
+    Scala languages. I would like to work in a team that involves working in the above domains or related field. 
 
   Preference 1: Data team,
   Preference 2: Platform team
