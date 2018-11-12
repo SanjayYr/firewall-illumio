@@ -42,6 +42,9 @@ Illumio coding assessment
     takes more (how much more is implementation dependent) than 1 byte in Java. Hence, storing as a char is efficient.
   - Each 'Rule' object is of size 1 + 1 + 2x4 + 2x8 = 26 bytes. For 1M entries, the total size of the ruleList is 26MB 
     which is of reasonable size and quick to respond while running queries.
+  - I did not use InetAddress class for converting String Ip to InetAddress and then get byte representation of each 
+    octet to compute long value. This is because InetAddress does a DNS lookup which incur additional time and DNS lookup 
+    is not required for our case.
     
 
 5) Further refinements and Optimizations.
