@@ -17,7 +17,9 @@ public class Firewall {
         char direction;
         // 't': tcp, 'u': udp
         char protocol;
+	// port is an array to take care of range values
         int[] port;
+	// ip is an array to take care of range values
         // Storing ip_address in long (converted from String) to save space and
         // also time during comparison
         long[] ip_address;
@@ -54,6 +56,7 @@ public class Firewall {
                     String[] portRange = rule[2].split("-");
                     int[] port = new int[portRange.length];
                     port[0] = Integer.parseInt(portRange[0]);
+		    // port may be just 1 port or a range of ports
                     if(portRange.length > 1){
                         port[1] = Integer.parseInt(portRange[1]);
                     }
@@ -62,10 +65,12 @@ public class Firewall {
                     String[] ipRange = rule[3].split("-");
                     long[] ip = new long[ipRange.length];
                     ip[0] = ipToLong(ipRange[0]);
+		    // ip may be 1 ip or a range of ips
                     if(ipRange.length > 1){
                         ip[1] = ipToLong(ipRange[1]);
                     }
 
+		    // add the rule object to the ruleList
                     ruleList.add(new Rule(direction, protocol, port, ip));
 
                 }
