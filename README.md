@@ -40,7 +40,7 @@ Illumio coding assessment
   - The 'direction' and 'protocol' are stored using a single character to optimize space and time. Since the possible 
     values of 'direction' and 'protocol' are just 2, I could have gone with boolean data type. But, boolean data type 
     takes more (how much more is implementation dependent) than 1 byte in Java. Hence, storing as a char is efficient.
-  - Each 'Rule' object is of size 1 + 1 + 2*4 + 2*8 = 26 bytes. For 1M entries, the total size of the ruleList is 26MB 
+  - Each 'Rule' object is of size 1 + 1 + 2x4 + 2x8 = 26 bytes. For 1M entries, the total size of the ruleList is 26MB 
     which is of reasonable size and quick to respond while running queries.
     
 
