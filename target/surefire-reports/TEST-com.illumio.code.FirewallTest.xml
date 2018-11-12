@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.illumio.code.FirewallTest" time="0.016" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.illumio.code.FirewallTest" time="0.012" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="sun.desktop" value="gnome"/>
     <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
@@ -17,7 +17,8 @@
     <property name="user.country" value="US"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="/usr/local/jdk1.8.0_172/jre/lib/amd64"/>
-    <property name="sun.java.command" value="/home/hadoop/illumio/firewall-illumio/target/surefire/surefirebooter5690295207892502335.jar /home/hadoop/illumio/firewall-illumio/target/surefire 2018-11-11T18-25-50_479-jvmRun1 surefire9174135721103167278tmp surefire_01028496051911735639tmp"/>
+    <property name="sun.java.command" value="/home/hadoop/illumio/firewall-illumio/target/surefire/surefirebooter4318713435259881268.jar /home/hadoop/illumio/firewall-illumio/target/surefire 2018-11-11T18-31-34_173-jvmRun1 surefire8153146317502927840tmp surefire_03685826767899470710tmp"/>
+    <property name="test" value="FirewallTest"/>
     <property name="surefire.test.class.path" value="/home/hadoop/illumio/firewall-illumio/target/test-classes:/home/hadoop/illumio/firewall-illumio/target/classes:/home/hadoop/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.3.1/junit-jupiter-engine-5.3.1.jar:/home/hadoop/.m2/repository/org/apiguardian/apiguardian-api/1.0.0/apiguardian-api-1.0.0.jar:/home/hadoop/.m2/repository/org/junit/platform/junit-platform-engine/1.3.1/junit-platform-engine-1.3.1.jar:/home/hadoop/.m2/repository/org/junit/platform/junit-platform-commons/1.3.1/junit-platform-commons-1.3.1.jar:/home/hadoop/.m2/repository/org/opentest4j/opentest4j/1.1.1/opentest4j-1.1.1.jar:/home/hadoop/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.3.1/junit-jupiter-api-5.3.1.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="/home/hadoop"/>
@@ -30,7 +31,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="/home/hadoop/illumio/firewall-illumio/target/surefire/surefirebooter5690295207892502335.jar"/>
+    <property name="surefire.real.class.path" value="/home/hadoop/illumio/firewall-illumio/target/surefire/surefirebooter4318713435259881268.jar"/>
     <property name="sun.boot.class.path" value="/usr/local/jdk1.8.0_172/jre/lib/resources.jar:/usr/local/jdk1.8.0_172/jre/lib/rt.jar:/usr/local/jdk1.8.0_172/jre/lib/sunrsasign.jar:/usr/local/jdk1.8.0_172/jre/lib/jsse.jar:/usr/local/jdk1.8.0_172/jre/lib/jce.jar:/usr/local/jdk1.8.0_172/jre/lib/charsets.jar:/usr/local/jdk1.8.0_172/jre/lib/jfr.jar:/usr/local/jdk1.8.0_172/jre/classes"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="1.8.0_172-b11"/>
@@ -47,6 +48,7 @@
     <property name="java.version" value="1.8.0_172"/>
     <property name="user.dir" value="/home/hadoop/illumio/firewall-illumio"/>
     <property name="os.arch" value="amd64"/>
+    <property name="filePath" value="/home/hadoop/illumio/firewall-illumio/test.csv"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
     <property name="sun.os.patch.level" value="unknown"/>
