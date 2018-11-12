@@ -26,12 +26,26 @@ Illumio coding assessment
     mvn package -Dtest=FirewallTest -DfilePath=/home/hadoop/illumio/firewall-illumio/test.csv
 
 3) Testing
+  - I have used JUnit testing framework for testing.
+  - I ran the test cases for most of the corner cases. I have included the test case with input file and queries given in 
+    the csv file. 
+  - More test cases can be easily added to FirewallTest.java with very little modifications to the code
+  - I also tested for the case where input file has 1M entries and observed that the query run was reasonably quick.
 
 
 4) Performance Considerations.
+  - The 'Rule' object is optimized to store as less information as possible for the rule entries.
+  - The 'direction' and 'protocol' are stored using a single character to optimize space and time. Since the possible 
+    values of 'direction' and 'protocol' are just 2, I could have gone with boolean data type. But, boolean data type 
+    takes more (how much more is implementation dependent) than 1 byte in Java. Hence, storing as a char is efficient.
+  - Each 'Rule' object is of size 1 + 1 + 2*4 + 2*8 = 26 bytes. For 1M entries, the total size of the ruleList is 26MB 
+    which is of reasonable size and quick to respond while running queries.
+    
 
+5) Further refinements and Optimizations.
+  - 
 
-5) Teams interested in.
+6) Teams interested in.
 
   Preference 1: Data team,
   Preference 2: Platform team
