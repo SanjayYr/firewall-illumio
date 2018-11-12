@@ -122,7 +122,8 @@ public class Firewall {
     public static void main(String[] args) {
 
         try {
-            Firewall f = new Firewall("/home/hadoop/illumio/firewall-illumio/test.csv");
+            //Firewall f = new Firewall("/home/hadoop/illumio/firewall-illumio/test.csv");
+            Firewall f = new Firewall(System.getProperty("filePath"));
             System.out.println(f.accept_packet("inbound", "tcp", 80, "192.168.1.2"));
             System.out.println(f.accept_packet("inbound", "udp", 53, "192.168.2.1"));
             System.out.println(f.accept_packet("outbound", "tcp", 10234, "192.168.10.11"));

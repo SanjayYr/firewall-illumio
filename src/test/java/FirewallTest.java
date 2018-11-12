@@ -9,7 +9,8 @@ class FirewallTest {
     @org.junit.jupiter.api.Test
     void accept_packet() {
         try {
-            Firewall f = new Firewall("/home/hadoop/illumio/firewall-illumio/test.csv");
+            //Firewall f = new Firewall("/home/hadoop/illumio/firewall-illumio/test.csv");
+	    Firewall f = new Firewall(System.getProperty("filePath"));
             boolean result1 = f.accept_packet("inbound", "tcp", 80, "192.168.1.2");
             assertEquals(true, result1);
 
