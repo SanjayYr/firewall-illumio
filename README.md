@@ -24,6 +24,7 @@ Illumio coding assessment
     mvn package -Dtest=FirewallTest -DfilePath='absoulte-path-of-the-file'
     
     For ex:
+    
     mvn package -Dtest=FirewallTest -DfilePath=/home/hadoop/illumio/firewall-illumio/test.csv
 
 3) Testing
@@ -62,5 +63,5 @@ Illumio coding assessment
     Elasticsearch. I have software development experience in Java domain. I also have some experience with Python and 
     Scala languages. I would like to work in a team that involves working in the above domains or related field. 
 
-  Preference 1: Data team,
-  Preference 2: Platform team
+    Preference 1: Data team,
+    Preference 2: Platform team
