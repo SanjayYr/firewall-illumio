@@ -18,6 +18,7 @@ Illumio coding assessment
 
 2) How to Run?
   - The code is developed as a Maven project
+  - I have run the project with Maven version 3.6.0 and I would recommend the same version 
   - Commands to run:
     mvn clean;        //  From the project root directory
     
