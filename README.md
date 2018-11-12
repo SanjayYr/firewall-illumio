@@ -26,6 +26,10 @@ Illumio coding assessment
     For ex:
     
     mvn package -Dtest=FirewallTest -DfilePath=/home/hadoop/illumio/firewall-illumio/test.csv
+   
+    If running in a windows system:
+    mvn package -Dtest=FirewallTest -DfilePath=C:\D-Drive\Fall 2018\test.csv
+   
 
 3) Testing
   - I have used JUnit testing framework for testing.
