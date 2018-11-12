@@ -15,5 +15,5 @@ Illumio coding assessment
 
 5) Teams interested in.
 
-  Preference 1: Data team \n
+  Preference 1: Data team,
   Preference 2: Platform team
