@@ -27,8 +27,8 @@ Illumio coding assessment
     
     mvn package -Dtest=FirewallTest -DfilePath=/home/hadoop/illumio/firewall-illumio/test.csv
    
-    If running in a windows system:
-    mvn package -Dtest=FirewallTest -DfilePath=C:\D-Drive\Fall 2018\test.csv
+    If running in a windows system (Note the double quotes around the absolute path):
+     mvn package -Dtest=FirewallTest -DfilePath="C:\\D-Drive\\Fall 2018\\test.csv"
    
 
 3) Testing
@@ -37,6 +37,7 @@ Illumio coding assessment
     the csv file. 
   - More test cases can be easily added to FirewallTest.java with very little modifications to the code
   - I also tested for the case where input file has 1M entries and observed that the query run was reasonably quick.
+  - Tested on both windows and linux platforms (due to difference in file path representation)
 
 
 4) Performance Considerations.
